@@ -2,6 +2,30 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f999;
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    article {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+}
+@font-face {
+    font-family: "oiReq";
+    src: url("../font/PasseroOne-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 }
 header {
     display: flex;
@@ -13,32 +37,6 @@ header {
     perspective: 1000px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-}
-h1 {
-    font-size: 4rem;
-    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
-    color: black;
-    font-family: "oiReq", Arial, Helvetica, sans-serif;
-}
-@media only screen and (max-width: 768px) {
-    header {
-        height: 200px;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-}
-@media screen and (max-width: 768px) {
-    article {
-        width: 90%;
-        max-width: 100%;
-        margin: 0 auto;
-        overflow-x: hidden;
-        box-sizing: border-box;
-    }
 }
 header::before {
     content: "";
@@ -53,13 +51,13 @@ header::before {
     filter: blur(10px);
     z-index: -1;
 }
-@font-face {
-    font-family: "oiReq";
-    src: url("../font/PasseroOne-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Roboto";
-    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-family: "oiReq", Arial, Helvetica, sans-serif;
 }
 footer {
     padding: 40px 0;
