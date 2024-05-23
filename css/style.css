@@ -115,7 +115,7 @@ article img {
     object-fit: cover;
 }
 .news:nth-of-type(even) {
-    background-color: #970;
+    background: linear-gradient(to right, yellow, green);
 }
 .news:nth-of-type(-n+2) article h2::before {
     content: "New ";
