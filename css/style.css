@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f999;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url("https://images.unsplash.com/photo-1715276611636-ca01632a691a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") bottom no-repeat;
+    background-size: cover;
+    perspective: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+    color: black;
+    font-family: "oiReq", Arial, Helvetica, sans-serif;
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    height: 25%;
+    background: url("https://images.unsplash.com/photo-1715276611636-ca01632a691a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") bottom no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    z-index: -1;
+}
+@font-face {
+    font-family: "oiReq";
+    src: url("../font/PasseroOne-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+}
+footer {
+    padding: 40px 0;
+    text-align: center;
+}
+footer .links {
+    margin-bottom: 50px;
+}
+footer .links > a {
+    color: #bb0;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+footer .links > a:hover {
+    color: #000;
+}
+.copyright {
+    color: rgb(99, 8, 16);
+    font-family: "oiReq", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.news {
+    background-color: #fff;
+    padding: 50px 0 32px;
+}
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(19 19 19);
+}
+article a {
+    color: rgb(24 28 32);
+    text-decoration: none;
+}
+article a:hover {
+    color: #2277d0;
+}
+article h2 {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.article-meta {
+    color: rgb(25 33 41);
+    margin-bottom: 5px;
+}
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.news:nth-of-type(even) {
+    background-color: #970;
+}
+.news:nth-of-type(-n+2) article h2::before {
+    content: "New ";
+    color: red;
+}
+.news article:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
