@@ -22,6 +22,15 @@ h1 {
     color: black;
     font-family: "oiReq", Arial, Helvetica, sans-serif;
 }
+@media only screen and (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
 header::before {
     content: "";
     position: absolute;
