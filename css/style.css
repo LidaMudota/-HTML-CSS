@@ -36,6 +36,8 @@ h1 {
         width: 90%;
         max-width: 100%;
         margin: 0 auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 }
 header::before {
